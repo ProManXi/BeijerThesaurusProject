@@ -64,10 +64,10 @@ namespace ThesaurusWebAPI.Controllers
           
             try
             {
-                _loggerService.Log($"GetSynonyms called for '{request.Word}'");
+                _loggerService.Log($"GetSynonyms called for '{word}'");
 
                 // API call
-                var result = _synonymService.GetSynonyms(request.Word);
+                var result = _synonymService.GetSynonyms(word);
 
                 // Return
                 return Ok(result);
