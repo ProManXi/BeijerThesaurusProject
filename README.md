@@ -51,7 +51,7 @@ Create a simple UI experience that can fully interact with the thesaurus.
 
 ### 1\. Clone the Repository
 
-git clone [https://github.com/ProManXi/BeijerThesaurusProject.git](https://github.com/your-username/your-repo-name.git)
+git clone [https://github.com/ProManXi/BeijerThesaurusProject.git]
 
 cd BeijerThesaurusProject
 
