@@ -56,12 +56,12 @@ namespace ThesaurusWebAPI.Controllers
         #endregion
 
         #region Get synonyms on basis of word Endpoint
-        [HttpPost("getsyn")]
-        public IActionResult GetSynonyms(GetSynonymDTO request)
+        [HttpGet("getsyn")]
+        public IActionResult GetSynonyms([FromQuery] string word)
         {
-            //Model Validation checks
-            if (!ModelState.IsValid) return BadRequest(ModelState);
-
+          // Validation checks
+          if (string.IsNullOrWhiteSpace(word)) return BadRequest("Word is Required");
+          
             try
             {
                 _loggerService.Log($"GetSynonyms called for '{request.Word}'");
