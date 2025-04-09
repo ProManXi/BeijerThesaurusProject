@@ -1,8 +1,8 @@
-##WebApp - Thesaurus Dictionary##
+##WebApp - Thesaurus Dictionary
 
 This is a web application built using .NET 8, HTML, CSS and JQuery.
 
-#Functional Requirements**
+#Functional Requirements
 
 • Add Word
 
@@ -12,7 +12,7 @@ This is a web application built using .NET 8, HTML, CSS and JQuery.
 
 Create a simple UI experience that can fully interact with the thesaurus.
 
-#Non-Functional Requirements#
+#Non-Functional Requirements
 
 • Performance
 
@@ -26,13 +26,13 @@ Create a simple UI experience that can fully interact with the thesaurus.
 
 • Maintainability
 
-Core Entities**
+#Core Entities
 
 • Word
 
 • Synonyms
 
-**API Endpoints**
+#API Endpoints
 
 - **POST /addword**  
     Adds a new word with its synonyms after performing validation checks.
@@ -41,7 +41,7 @@ Core Entities**
 - **GET /**  
     Returns a list of all words currently stored in the system.
 
-**High Level Design**
+#High Level Design
 ![High-Level Design](./assets/hld.png)
 
 ## Steps to Run the Application
