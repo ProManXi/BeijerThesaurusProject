@@ -16,6 +16,8 @@ Create a simple UI experience that can fully interact with the thesaurus.
 
 • Performance
 
+• Seperation of Concerns
+
 • Custom Logging
 
 • Avoid Duplicity of words
@@ -49,8 +51,8 @@ Create a simple UI experience that can fully interact with the thesaurus.
 
 ### 1\. Fast Startup & No Persistence vs Slow Startup & Persistence  // I chose ( Slow Startup & Persistence)
 
-    I went with Slow Startup and Quick Lookups. (Hybrid model with saving data in a File and during startup,
-    load them into Cache but once in cache, it will be very fast)
+    I went with Slow Startup and Data persistence. (Hybrid model with saving data in a File and during startup,
+    load them into Cache but once in cache, it will be fast and persistence)
 
 ### 2\. Reverse Dictionary Logic vs Something to avoid Duplicacy  // I chose (Graphs)
 
