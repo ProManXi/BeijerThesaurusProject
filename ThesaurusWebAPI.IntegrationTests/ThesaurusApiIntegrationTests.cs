@@ -43,12 +43,9 @@ public class ThesaurusApiIntegrationTests
     [Test]
     public async Task GetSynonyms_ShouldReturnExpectedSynonyms()
     {
-        var inputword = JsonContent.Create(new
-        {
-            word = "joy"
-        });
+        var inputword = "joy";
 
-        var response = await _httpClient.PostAsync("/api/thesaurus/getsyn", inputword);
+        var response = await _httpClient.GetAsync("/api/thesaurus/getsyn/ " + inputword);
         var result = await response.Content.ReadAsStringAsync();
 
         Assert.That(result, Does.Contain("happy"));
