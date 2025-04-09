@@ -42,7 +42,7 @@ Create a simple UI experience that can fully interact with the thesaurus.
     Returns a list of all words currently stored in the system.
 
 ### High Level Design
-![High-Level Design](./assets/hld.png)
+![High-Level Design](hld.png)
 
 
 
