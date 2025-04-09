@@ -169,11 +169,10 @@
 
                 $.ajax({
                     url: "/api/Thesaurus/getsyn",
-                    method: "POST",
-                    contentType: "application/json",
-                    data: JSON.stringify({
+                    method: "GET",
+                    data: {
                         word: word
-                    }),
+                    },
                     success: function (data) {
                         if (data.length > 0) {
                             $('#synonym-result').text("Synonyms: " + data.join(", "));
