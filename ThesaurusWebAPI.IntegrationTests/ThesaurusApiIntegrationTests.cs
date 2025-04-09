@@ -27,12 +27,9 @@ public class ThesaurusApiIntegrationTests
         var response = await _httpClient.PostAsync("/api/thesaurus/addword", content);
         response.EnsureSuccessStatusCode();
 
-        var inputword = JsonContent.Create(new
-        {
-            word = uniqueWord
-        }); 
+        var inputword = uniqueWord;
 
-        var getResponse = await _httpClient.PostAsync("/api/thesaurus/getsyn", inputword);
+        var getResponse = await _httpClient.GetAsync("/api/thesaurus/getsyn/", inputword);
         var json = await getResponse.Content.ReadAsStringAsync();
 
         Assert.That(json, Does.Contain("poor"));
@@ -45,7 +42,7 @@ public class ThesaurusApiIntegrationTests
     {
         var inputword = "joy";
 
-        var response = await _httpClient.GetAsync("/api/thesaurus/getsyn/ " + inputword);
+        var response = await _httpClient.GetAsync("/api/thesaurus/getsyn/" + inputword);
         var result = await response.Content.ReadAsStringAsync();
 
         Assert.That(result, Does.Contain("happy"));
