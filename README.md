@@ -45,6 +45,33 @@ Create a simple UI experience that can fully interact with the thesaurus.
 ![High-Level Design](hld.png)
 
 
+## Trade Offs
+
+### 1\. Fast Startup & No Persistence vs Slow Startup & Persistence  // I chose ( Slow Startup & Persistence)
+
+    I went with Slow Startup and Quick Lookups. (Hybrid model with saving data in a File and during startup,
+    load them into Cache but once in cache, it will be very fast)
+
+### 2\. Reverse Dictionary Logic vs Something to avoid Duplicacy  // I chose (Graphs)
+
+    I went with Graphs as I came to know they work on Nodes and Edges and using them we can arrange data in a
+    BiDirectional way  (if A has relatonship with B, then if someone searches B, its all relationships will
+    come up). It avoids duplicacy.
+
+### 3\. Weighted & Directed vs Unweighted & Undirected // I chose (Unweighted & Undirected)
+
+    We can say happy is 2 times weighted to joyful, 3 times weighted to escatic and 1 time wieghted to glad, 
+    but for this project, I can go with unweighted as it can work as an extension for future releases!
+    
+### 4\. React app vs HTML pages // I chose (HTML)
+
+    I went with HTML so that I can focus more on functionality of Graph and Cache. It will be difficult to release two different      tech stacks for a small project.
+
+### 5\. SQL vs NoSQL vs FileSystem // I chose (FileSystem)
+
+     We do not need any ACID properties/ relationships between numerous tables, so we can avoid Relational Databases.
+     It will also be an overhead to setup DB and make unnecessary connections for this small project.
+
 
 
 ## Steps to Run the Application
