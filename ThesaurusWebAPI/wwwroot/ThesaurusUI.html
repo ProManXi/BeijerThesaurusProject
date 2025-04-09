@@ -84,7 +84,8 @@
                 return;
             }
 
-            var synonyms = synonymsText.split(',').map(s => s.trim());
+            word = word.toLowerCase();
+            var synonyms = synonymsText.toLowerCase().split(',').map(s => s.trim());
 
             $.ajax({
                 url: "/api/thesaurus/addword",
