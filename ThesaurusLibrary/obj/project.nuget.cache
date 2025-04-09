@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ofdgE3FinXg=",
+  "success": true,
+  "projectFilePath": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusLibrary/ThesaurusLibrary.csproj",
+  "expectedPackageFiles": [
+    "/Users/parth/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "/Users/parth/.nuget/packages/microsoft.extensions.primitives/8.0.0/microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

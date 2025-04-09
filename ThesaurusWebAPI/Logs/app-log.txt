@@ -1,0 +1,60 @@
+[2025-04-06 23:35:32] AddWord called for 'hh'
+[2025-04-06 23:38:51] AddWord called for 'joy'
+[2025-04-06 23:39:13] GetAllWords called
+[2025-04-06 23:40:12] AddWord called for 'sad'
+[2025-04-06 23:40:19] GetAllWords called
+[2025-04-06 23:44:03] GetAllWords called
+[2025-04-06 23:44:30] AddWord called for 'hurt'
+[2025-04-06 23:44:33] GetAllWords called
+[2025-04-08 14:14:34] GetAllWords called
+[2025-04-08 14:20:36] GetAllWords called
+[2025-04-08 14:22:33] GetAllWords called
+[2025-04-08 14:26:12] GetAllWords called
+[2025-04-09 00:51:56] GetAllWords called
+[2025-04-09 00:52:04] GetSynonyms called for 'joy'
+[2025-04-09 00:52:09] GetSynonyms called for 'happy'
+[2025-04-09 00:52:14] GetSynonyms called for 'wounded'
+[2025-04-09 00:52:22] GetAllWords called
+[09-04-2025 01:00:02] AddWord called for 'hello'
+[09-04-2025 01:00:04] GetAllWords called
+[09-04-2025 01:00:09] GetSynonyms called for 'hola'
+[09-04-2025 01:00:42] GetSynonyms called for 'hola'
+[09-04-2025 01:01:01] GetSynonyms called for 'hola'
+[09-04-2025 01:01:22] GetSynonyms called for 'hola'
+[09-04-2025 01:01:29] GetSynonyms called for 'boobpp'
+[09-04-2025 01:09:12] AddWord called for 'aaaa'
+[09-04-2025 01:09:16] GetAllWords called
+[09-04-2025 01:17:20] AddWord called for 'dadlsk'
+[09-04-2025 01:24:06] AddWord called for 'ASDSD'
+[09-04-2025 01:24:17] GetAllWords called
+[09-04-2025 01:39:25] AddWord called for 'ksahjlasdhjasdh'
+[09-04-2025 11:35:12] GetAllWords called
+[09-04-2025 12:20:12] AddWord called for 'asdsd'
+[09-04-2025 12:20:22] AddWord called for 'adka'
+[09-04-2025 12:20:27] GetAllWords called
+[09-04-2025 12:22:16] GetSynonyms called for 'skjdsd'
+[09-04-2025 12:22:21] GetSynonyms called for 'joy'
+[09-04-2025 12:58:57] AddWord called for 'kkj'
+[09-04-2025 12:58:57] ERROR: Error in writing data in  file
+Exception: Value cannot be null. (Parameter 'path')
+StackTrace:    at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.ArgumentException.ThrowNullOrEmptyException(String argument, String paramName)
+   at System.IO.File.Validate(String path, Encoding encoding)
+   at System.IO.File.WriteAllText(String path, String contents)
+   at ThesaurusLibrary.Services.FileReaderService.WriteData(Dictionary`2 data) in C:\Users\parth.gupta\source\repos\BeijerCodingProject\ThesaurusLibrary\Services\FileReaderService.cs:line 49
+[09-04-2025 13:03:28] GetAllWords called
+[09-04-2025 13:05:41] GetAllWords called
+[09-04-2025 13:13:00] AddWord called for 'hello'
+[09-04-2025 13:13:21] AddWord called for 'hello'
+[09-04-2025 13:15:56] AddWord called for 'hello'
+[09-04-2025 13:16:17] AddWord called for 'hello'
+[09-04-2025 13:21:12] AddWord called for 'hello'
+[09-04-2025 13:22:01] AddWord called for 'hello'
+[09-04-2025 13:25:36] AddWord called for 'hello'
+[09-04-2025 13:25:49] AddWord called for 'hejhej'
+[09-04-2025 13:25:53] GetAllWords called
+[09-04-2025 13:25:59] GetSynonyms called for 'hola'
+[09-04-2025 13:26:00] GetSynonyms called for 'hola'
+[09-04-2025 13:28:40] AddWord called for 'asmdn'
+[09-04-2025 13:28:43] GetAllWords called

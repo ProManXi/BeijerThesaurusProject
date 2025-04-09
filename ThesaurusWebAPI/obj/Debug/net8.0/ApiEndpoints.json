@@ -1,0 +1,44 @@
+[
+  {
+    "ContainingType": "ThesaurusWebAPI.Controllers.ThesaurusController",
+    "Method": "GetAllWords",
+    "RelativePath": "api/Thesaurus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThesaurusWebAPI.Controllers.ThesaurusController",
+    "Method": "AddWord",
+    "RelativePath": "api/Thesaurus/addword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ThesaurusWebAPI.DTOs.AddWordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ThesaurusWebAPI.Controllers.ThesaurusController",
+    "Method": "GetSynonyms",
+    "RelativePath": "api/Thesaurus/getsyn",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "ThesaurusWebAPI.DTOs.GetSynonymDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

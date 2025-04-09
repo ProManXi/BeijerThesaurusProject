@@ -1,0 +1,202 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusWebAPI/ThesaurusWebAPI.csproj": {}
+  },
+  "projects": {
+    "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/LoggingLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/LoggingLibrary.csproj",
+        "projectName": "LoggingLibrary",
+        "projectPath": "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/LoggingLibrary.csproj",
+        "packagesPath": "/Users/parth/.nuget/packages/",
+        "outputPath": "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/parth/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusLibrary/ThesaurusLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusLibrary/ThesaurusLibrary.csproj",
+        "projectName": "ThesaurusLibrary",
+        "projectPath": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusLibrary/ThesaurusLibrary.csproj",
+        "packagesPath": "/Users/parth/.nuget/packages/",
+        "outputPath": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusLibrary/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/parth/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/LoggingLibrary.csproj": {
+                "projectPath": "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/LoggingLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusWebAPI/ThesaurusWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusWebAPI/ThesaurusWebAPI.csproj",
+        "projectName": "ThesaurusWebAPI",
+        "projectPath": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusWebAPI/ThesaurusWebAPI.csproj",
+        "packagesPath": "/Users/parth/.nuget/packages/",
+        "outputPath": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusWebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/parth/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/LoggingLibrary.csproj": {
+                "projectPath": "/Users/parth/Downloads/BeijerThesaurusProject/LoggingLibrary/LoggingLibrary.csproj"
+              },
+              "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusLibrary/ThesaurusLibrary.csproj": {
+                "projectPath": "/Users/parth/Downloads/BeijerThesaurusProject/ThesaurusLibrary/ThesaurusLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

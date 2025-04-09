@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="Data\thesaurus.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Data\thesaurus.json" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Update="Data\thesaurus.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LoggingLibrary\LoggingLibrary.csproj" />
+    <ProjectReference Include="..\ThesaurusLibrary\ThesaurusLibrary.csproj" />
+  </ItemGroup>
+
+</Project>
