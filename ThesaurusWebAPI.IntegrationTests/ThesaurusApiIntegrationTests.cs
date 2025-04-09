@@ -4,10 +4,10 @@ using ThesaurusWebAPI.IntegrationTests.Helper;
 
 public class ThesaurusApiIntegrationTests
 {
-    private  WebApplicationFactory<Program> _factory;
-    private  HttpClient _httpClient;
+    private WebApplicationFactory<Program> _factory;
+    private HttpClient _httpClient;
 
-    [OneTimeSetUp] 
+    [OneTimeSetUp]
     public void OneTimeSetup()
     {
         _factory = new WebApplicationFactory<Program>();
@@ -24,25 +24,25 @@ public class ThesaurusApiIntegrationTests
             synonyms = new[] { "poor", "substandard" }
         });
 
+        // POST: /api/thesaurus/addword
         var response = await _httpClient.PostAsync("/api/thesaurus/addword", content);
         response.EnsureSuccessStatusCode();
 
-        var inputword = uniqueWord;
-
-        var getResponse = await _httpClient.GetAsync("/api/thesaurus/getsyn/", inputword);
+        // GET: /api/thesaurus/getsynonyms?word=...
+        var getResponse = await _httpClient.GetAsync($"/api/thesaurus/getsynonyms?word={uniqueWord}");
         var json = await getResponse.Content.ReadAsStringAsync();
 
         Assert.That(json, Does.Contain("poor"));
         Assert.That(json, Does.Contain("substandard"));
     }
 
-
     [Test]
     public async Task GetSynonyms_ShouldReturnExpectedSynonyms()
     {
-        var inputword = "joy";
+        var inputWord = "joy";
 
-        var response = await _httpClient.GetAsync("/api/thesaurus/getsyn/" + inputword);
+        // GET: /api/thesaurus/getsynonyms?word=joy
+        var response = await _httpClient.GetAsync($"/api/thesaurus/getsynonyms?word={inputWord}");
         var result = await response.Content.ReadAsStringAsync();
 
         Assert.That(result, Does.Contain("happy"));
@@ -52,6 +52,7 @@ public class ThesaurusApiIntegrationTests
     [Test]
     public async Task GetAllWords_ShouldReturnOk()
     {
+        // GET: /api/thesaurus
         var response = await _httpClient.GetAsync("/api/thesaurus");
         Assert.That(response.IsSuccessStatusCode, Is.True);
     }
