@@ -62,15 +62,15 @@ You can open the project in any of the following:
 - **Visual Studio 2022 or later** (recommended)
 - **Visual Studio Code** (with C# extension installed)
 
-### 3\. Restore Dependencies
-
-Run the following command in the root folder:
-
-dotnet restore
-
-### 4\. Build the Application
+### 3\. Build the Application
 
 dotnet build
+
+### 3\. Startup Project
+
+Set ThesaurusWebAPI as Startup project
+
+dotnet restore
 
 ### 5\. Run the Application
 
