@@ -44,6 +44,9 @@ Create a simple UI experience that can fully interact with the thesaurus.
 ### High Level Design
 ![High-Level Design](./assets/hld.png)
 
+
+
+
 ## Steps to Run the Application
 
 ### 1\. Clone the Repository
