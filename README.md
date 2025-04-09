@@ -85,7 +85,7 @@ By default, the API will be available at:
 You can test the following endpoints using tools like **Postman**, **curl**, or a **frontend app**:
 
 - POST /addword – Add a word and its synonyms
-- POST /getsyn – Get synonyms for a given word
+- GET /getsyn – Get synonyms for a given word
 - GET / – Get all words in the system
 
 ### 7\. Run Unit Tests and Integration Tests
