@@ -36,7 +36,7 @@ Create a simple UI experience that can fully interact with the thesaurus.
 
 - **POST /addword**  
     Adds a new word with its synonyms after performing validation checks.
-- **POST /getsyn**  
+- **GET /getsyn?word=apple**  
     Retrieves synonyms for a given word.
 - **GET /**  
     Returns a list of all words currently stored in the system.
