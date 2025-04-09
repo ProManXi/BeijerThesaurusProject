@@ -8,31 +8,5 @@
   ],
   "cheerful": [
     "joy"
-  ],
-  "sad": [
-    "upset"
-  ],
-  "upset": [
-    "sad"
-  ],
-  "hurt": [
-    "injured",
-    "wounded"
-  ],
-  "injured": [
-    "hurt"
-  ],
-  "wounded": [
-    "hurt"
-  ],
-  "hello": [
-    "hola",
-    "hejhej"
-  ],
-  "hola": [
-    "hello"
-  ],
-  "hejhej": [
-    "hello"
   ]
 }
