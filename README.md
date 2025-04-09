@@ -66,7 +66,7 @@ You can open the project in any of the following:
 
 dotnet build
 
-### 3\. Startup Project
+### 4\. Startup Project
 
 Set ThesaurusWebAPI as Startup project
 
