@@ -56,7 +56,7 @@ namespace ThesaurusWebAPI.Controllers
         #endregion
 
         #region Get synonyms on basis of word Endpoint
-        [HttpGet("getsyn")]
+        [HttpGet("getsynonyms")]
         public IActionResult GetSynonyms([FromQuery] string word)
         {
           // Validation checks
